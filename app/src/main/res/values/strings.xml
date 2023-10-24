@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="menu_search">search</string>
+    <string name="menu_exit">exit</string>
+    <string name="ch1">ch1\n</string>
+    <string name="messageText" />
+    <string name="message_text" />
+
+</resources>

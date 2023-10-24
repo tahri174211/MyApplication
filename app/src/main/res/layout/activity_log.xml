@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#343434">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/top_background" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcom Back"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="100dp"
+                android:layout_marginStart="32dp"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/ed"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Email"
+                android:textColorHint="#ffffff"
+                android:padding="8dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/email"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"/>
+
+            <EditText
+                android:id="@+id/edi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Password"
+                android:textColorHint="#ffffff"
+                android:padding="8dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:drawableStart="@drawable/password"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/edittext_background"
+                android:drawableEnd="@drawable/baseline_visibility_24" />
+
+            <ImageView
+                android:id="@+id/cnx"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="16sp"
+
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/btn_login" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                style="@android:style/Widget.Button"
+                android:textColor="#ffffff"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:drawableStart="@drawable/google"
+                android:drawablePadding="16dp"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="signup with google"
+                android:background="@drawable/background_btn_2"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                style="@android:style/Widget.Button"
+                android:textColor="#ffffff"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:drawableStart="@drawable/facebook"
+                android:drawablePadding="16dp"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="signup with facebook"
+                android:background="@drawable/background_btn_2"/>
+
+            <TextView
+                android:id="@+id/versregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text"
+                android:text="Are you a new User? Register"
+                android:textColor="#E1A500"
+                android:textStyle="bold"
+                android:layout_marginTop="32dp"
+                android:textAlignment="center"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
